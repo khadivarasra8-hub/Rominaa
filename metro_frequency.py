@@ -170,7 +170,7 @@ class MetroFrequencyOptimizer:
                 model += wt_var == pulp.lpSum(
                     lam * wv for lam, wv in zip(lambda_vars, wait_values)
                 )
-                model.addSOS2(lambda_vars)
+            
 
                 # هزینه زمان انتظار کل مسافران در آن بازه:
                 # (تقاضای کل بازه) × (زمان انتظار متوسط به دقیقه) × (هزینه هر نفر-دقیقه)
