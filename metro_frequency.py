@@ -22,7 +22,7 @@ from typing import Dict, List, Optional
 import pulp
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
-from config.settings import (
+from settings import (
     DEFAULT_LINES,
     LineConfig,
     TIME_PERIODS,
